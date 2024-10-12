@@ -3,7 +3,6 @@ DROP TABLE IF EXISTS goods;
 DROP TABLE IF EXISTS receipts;
 DROP TABLE IF EXISTS items;
 
-
 CREATE TABLE customers (
     CId INT PRIMARY KEY, 
     LastName VARCHAR(50),
