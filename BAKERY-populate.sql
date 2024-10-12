@@ -1,4 +1,3 @@
-
 INSERT INTO customers (CId, Lastname, Firstname) VALUES (1, 'LOGAN', 'JULIET');
 INSERT INTO customers (CId, Lastname, Firstname) VALUES (2, 'ARZT', 'TERRELL');
 INSERT INTO customers (CId, Lastname, Firstname) VALUES (3, 'ESPOSITA', 'TRAVIS');

@@ -1,16 +1,16 @@
 DROP TABLE IF EXISTS airlines;
 DROP TABLE IF EXISTS airports;
-DROP TABLE IF EXISTS airlines;
+DROP TABLE IF EXISTS flights;
 
 CREATE TABLE airlines (
-  Id integer PRIMARY KEY,
+  Id INT PRIMARY KEY,
   Airline varchar(100),
   Abbreviation varchar(50),
   Country varchar(50),
   UNIQUE(Abbreviation)
 );
 
-CREATE TABLE Airports (
+CREATE TABLE airports (
     AirportCode VARCHAR(10) PRIMARY KEY,
     City VARCHAR(255),
     AirportName VARCHAR(255),
