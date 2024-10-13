@@ -1,0 +1,15 @@
+(a) https://www.kaggle.com/datasets/umerhaddii/shakespeare-plays-dialogues?select=hamlet.csv
+    (shortened each datatset to about 24 lines)
+
+(b) The database consists of a Plays table and separate tables for the plays Hamlet, Macbeth, and Romeo and Juliet. 
+The Plays table holds basic information about each play, including a unique play_id and title. 
+The play-specific tables (e.g., hamlet, macbeth, romeo_juliet) store the dialogue, character names, acts, scenes, and line numbers for each play.
+Each play-specific table links back to the Plays table via the play_id, establishing a one-to-many relationship where each play can have multiple lines of dialogue or stage directions. 
+
+(c) A key mapping challenge was the presence of duplicates in almost every column, such as dialogue, character names, etc., making it difficult to establish primary or unique keys.
+Repeated lines of dialogue by different characters and stage directions without unique identifiers complicated the use of constraints to ensure data integrity. 
+Handling NULL values, especially for stage directions that lack line numbers, made it difficult, as NULL values are not allowed in primary keys. 
+
+(d) - Find all scenes where multiple characters speak the same dialogue.
+    - Identify the character with the most dialogue in a given play.
+    - Find the longest continuous conversation between two characters.
